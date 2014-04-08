@@ -134,6 +134,20 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     Note this is purely experimental and if you enable this, there is no support for layouts breaking."),
   );
 
+  $form['additional_settings']['other_settings']['bamboo_imagecaptions'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use Image Captions?'),
+    '#default_value' => theme_get_setting('bamboo_imagecaptions', 'bamboo'),
+    '#description' => t("Check this box if you would like captions for imagefield images."),
+  );
+
+  $form['additional_settings']['other_settings']['bamboo_tablehover'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use experimental table hover effect?'),
+    '#default_value' => theme_get_setting('bamboo_tablehover', 'bamboo'),
+    '#description' => t("Check this box for an experimental hover effect on table cells."),
+  );
+
   $form['custom_css_path_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Custom CSS Path Settings'),
