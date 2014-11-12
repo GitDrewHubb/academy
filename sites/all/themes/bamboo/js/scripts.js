@@ -26,15 +26,12 @@
         });
 
       /* toggle nav */
-      $("#menu-icon").click(function() {
+      $("#menu-icon").once().click(function() {
         $("#main-menu ul.menu.ul-depth-0").toggle();
         $(this).toggleClass("active");
       });
 
       // End mobile menu.
-
-// prepend the post date before the h1.
-  $(".date-in-parts").prependTo(".not-front.page-node #post-content");
 
 // Global zebra stripes and first / last.
   $(".front article:visible:even").addClass("even");
