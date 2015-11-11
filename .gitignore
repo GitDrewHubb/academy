@@ -1,3 +1,6 @@
+# Ignore Dev Desktop stuff
+sites/*.dd
+
 *.DS_Store
 
 # Ignore configuration files that may contain sensitive information.
