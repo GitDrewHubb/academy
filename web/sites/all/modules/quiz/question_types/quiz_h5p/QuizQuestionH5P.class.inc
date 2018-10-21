@@ -28,6 +28,12 @@ class QuizQuestionH5P extends QuizQuestion {
         )
       ),
     );
-    
+
+  }
+
+  public function getNodeForm(array &$form_state = NULL) {
+    $form = parent::getNodeForm($form_state);
+    unset($form['title']);
+    return $form;
   }
 }

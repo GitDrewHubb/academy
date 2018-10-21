@@ -9,9 +9,20 @@ dependencies[] = h5peditor
 
 files[] = QuizQuestionH5P.class.inc
 files[] = QuizQuestionH5PResponse.class.inc
-; Information added by Drupal.org packaging script on 2016-01-21
-version = "7.x-4.0-rc2"
+
+files[] = report/h5p-report.class.php
+files[] = report/h5p-report-xapi-data.class.php
+files[] = report/type-processors/type-processor.class.php
+files[] = report/type-processors/compound-processor.class.php
+files[] = report/type-processors/fill-in-processor.class.php
+files[] = report/type-processors/true-false-processor.class.php
+files[] = report/type-processors/choice-processor.class.php
+files[] = report/type-processors/long-choice-processor.class.php
+files[] = report/type-processors/matching-processor.class.php
+
+; Information added by Drupal.org packaging script on 2018-02-06
+version = "7.x-4.0-rc9"
 core = "7.x"
 project = "quiz"
-datestamp = "1453399821"
+datestamp = "1517908099"
 
