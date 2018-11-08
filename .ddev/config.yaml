@@ -9,7 +9,7 @@ router_https_port: "443"
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
-provider: default
+provider: drud-s3
 
 
 # This config.yaml was created with ddev version v1.3.0 
